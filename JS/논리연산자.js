@@ -1,0 +1,11 @@
+console.log(false || false);
+console.log(true || false);
+console.log(true || true);
+console.log(false && false);
+console.log(true && false);
+console.log(true && true);
+console.log(Boolean(0 || false));
+console.log(Boolean(123 || false));
+console.log(Boolean(123 && 0));
+console.log(!false);
+console.log(!123);
