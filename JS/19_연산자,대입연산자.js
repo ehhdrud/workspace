@@ -1,3 +1,10 @@
+console.log(31 + 10);
+console.log(31 - 10);
+console.log(31 * 10);
+console.log(31 / 10);
+console.log(31 % 10);
+console.log(2 ** 3);
+
 let num_1 = 123;
 let num_2 = 456;
 let str_1 = "hello";
