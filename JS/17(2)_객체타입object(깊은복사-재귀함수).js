@@ -7,8 +7,20 @@ let user = {
   },
 };
 
-let admin = JSON.parse(JSON.stringify(user));
-//stringify를 이용해 user객체를 문자열로 만들고, parse를 이용해 문자열을 다시 객체로 만들어서 admin에 넣음. 이 과정에서 원본 객체와의 참조가 끊김.
+function copy(user) {
+  let result = {};
+
+  for (let key in user) {
+    if (typeof user[key] === "object") {
+      result[key] = copy(user[key]);
+    } else {
+      result[key] = user[key];
+    }
+  }
+  return result;
+} //재귀함수를 이용한 깊은 복사
+
+admin = copy(user);
 
 admin.sizes.weight++;
 --admin.sizes.height;
