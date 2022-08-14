@@ -1,6 +1,6 @@
 function add(x, y) {
   return x + y;
-  console.log("hello!"); //"hello!"는 출력이 안됨 > return 자체의 의미도 있지만 break의 기능도 함! (VScode도 흐릿하게 처리함...)
+  console.log("hello!");
 }
 
 let result = add(10, 20);

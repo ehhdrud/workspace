@@ -4,8 +4,8 @@ while (i < 5) {
   i++;
 }
 
-i = 10;
+i = 100;
 do {
   console.log(i);
   i++;
-} while (i < 11);
+} while (i < 101);

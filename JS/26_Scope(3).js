@@ -9,5 +9,5 @@ function local_func() {
   console.log(index);
 }
 
-local_func(); //function local_func() 실행
+local_func();
 console.log(index);

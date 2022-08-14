@@ -11,5 +11,5 @@ console.log(user);
 console.log(user.name);
 console.log(user.age);
 
-user.age = 38; //재할당 가능!
+user.age = 38;
 console.log(user.age);

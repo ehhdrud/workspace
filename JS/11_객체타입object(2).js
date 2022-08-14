@@ -3,10 +3,10 @@ let user = {
   age: 28,
 };
 
-console.log(user); //{ name: 'SDK', age: 28 }
+console.log(user);
 
-user.weight = 83; //추가
-console.log(user); //{ name: 'SDK', age: 28, weight: 83 }
+user.weight = 83;
+console.log(user);
 
-delete user.age; //삭제
-console.log(user); //{ name: 'SDK', weight: 83 }
+delete user.age;
+console.log(user);

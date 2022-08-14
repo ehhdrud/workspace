@@ -1,8 +1,8 @@
-let language = "JavaScript";
+let language = "Javascript";
 let text = "";
 
-//Syntax: for (variable of iterable){}
 for (let x of language) {
-  text += x; //text = text + x
+  text += x;
   console.log(x);
 }
+console.log(text);

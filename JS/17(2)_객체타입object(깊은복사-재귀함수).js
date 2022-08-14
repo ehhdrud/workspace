@@ -18,14 +18,14 @@ function copy(user) {
     }
   }
   return result;
-} //재귀함수를 이용한 깊은 복사
+}
 
 admin = copy(user);
 
 admin.sizes.weight++;
 --admin.sizes.height;
 
-console.log(admin.sizes.height); //output:182
-console.log(admin.sizes.weight); //output:84
-console.log(user.sizes.height); //output:183
-console.log(user.sizes.weight); //output:83
+console.log(admin.sizes.height);
+console.log(admin.sizes.weight);
+console.log(user.sizes.height);
+console.log(user.sizes.weight);

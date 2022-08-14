@@ -26,7 +26,7 @@ console.log(Number("123hello"));
 console.log(Number(true));
 console.log(Number(false));
 console.log(Number(undefined));
-console.log(Number(null)); //Number는 정수와 실수를 모두 포함하는 형변환
+console.log(Number(null));
 console.log(typeof Number(""));
 console.log(typeof Number("123"));
 console.log(typeof Number("hello"));
@@ -35,8 +35,8 @@ console.log(typeof Number(true));
 console.log(typeof Number(false));
 console.log(typeof Number(undefined));
 console.log(typeof Number(null));
-console.log(parseInt("123.123")); //정수 변환
-console.log(parseFloat("123.123")); //실수 변환
+console.log(parseInt("123.123"));
+console.log(parseFloat("123.123"));
 
 console.log(typeof parseInt("123.123"));
 console.log(typeof parseFloat("123.123"));
