@@ -20,3 +20,5 @@ admin.func();
 //'.'말고도 '대괄호[]'를 통해서도 객체 내부에 접근 가능!
 user["func"]();
 admin["func"]();
+
+user["name"];

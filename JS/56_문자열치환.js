@@ -3,11 +3,10 @@ let changed_text = "";
 
 changed_text = text.replace("world", "earth");
 
-console.log(changed_text);
-console.log(text);
+console.log(changed_text); //helLo, earth!!!
 
-console.log(text.replace("!", "?"));
-console.log(text.replace("l", "i"));
+console.log(text.replace("!", "?")); //helLo, world?!!
+console.log(text.replace("l", "i")); //heiLo, world!!!
 
 //정규표현식 활용 문자열 치환
 console.log(text.replace(/l/g, "i")); //모든 l이 i로 바뀜(g인자)
