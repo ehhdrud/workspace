@@ -10,4 +10,3 @@ console.log(fruits.concat("strawberry")); //[ 'apple', 'orange', 'melon', 'straw
 console.log(fruits.concat(["cherry", "banana"])); //[ 'apple', 'orange', 'melon', 'cherry', 'banana' ]
 console.log(fruits.concat(["cherry", "banana"], "mango")); //[ 'apple', 'orange', 'melon', 'cherry', 'banana', 'mango' ]
 
-console.log(fruits.concat(["cherry", "banana"]).length);

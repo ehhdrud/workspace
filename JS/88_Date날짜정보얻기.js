@@ -8,7 +8,7 @@ console.log(date.getMonth()); //11
 console.log(date.getDate()); //29
 console.log(date.getDay()); //5
 
-//hours
+//hours, minutes, seconds, milliseconds
 console.log(date.getHours()); //9
 console.log(date.getUTCHours()); //0 //UTC보정값
 console.log(date.getMinutes()); //0

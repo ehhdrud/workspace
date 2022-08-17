@@ -9,5 +9,5 @@ console.log(text.replace("!", "?")); //helLo, world?!!
 console.log(text.replace("l", "i")); //heiLo, world!!!
 
 //정규표현식 활용 문자열 치환
-console.log(text.replace(/l/g, "i")); //모든 l이 i로 바뀜(g인자)
-console.log(text.replace(/l/gi, "i")); //대소문자 구분없이 치환(i인자)해서 l이 아닌 L도 i로 바뀜
+console.log(text.replace(/l/g, "i")); //heiLo, worid!!!
+console.log(text.replace(/l/gi, "i")); //heiio, worid!!!

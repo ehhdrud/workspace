@@ -11,5 +11,5 @@ console.log(map.size); //3
 
 map.clear();
 console.log(map); //Map(0) {}
-map.set("name", "alice").set(123, 456).set(false, "bool_type"); //이런식으로도 쓸 수 있음!
+map.set("name", "alice").set(123, 456).set(false, "bool_type"); //이런식으로도 추가 가능
 console.log(map); //Map(3) { 'name' => 'alice', 123 => 456, false => 'bool_type' }

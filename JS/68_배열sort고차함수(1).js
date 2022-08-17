@@ -13,6 +13,6 @@ let decending_order = function (x, y) {
   return y - x; //y-x>0이 참이면 두 값의 위치가 바뀜 //(ex) (4,10) -> 10-4=6 > 0 -> true -> (10,4)
 };
 
-console.log(nums.sort(ascending_order));
-[-1, 0, 1, 4, 10, 12, 20];
+console.log(nums.sort(ascending_order)); //[-1, 0, 1, 4, 10, 12, 20]
 console.log(nums.sort(decending_order)); //[20, 12, 10, 4, 1, 0, -1]
+

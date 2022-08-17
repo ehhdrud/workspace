@@ -7,7 +7,7 @@ function User(name) {
 }
 
 let result_1 = User("john");
-console.log(result_1); //생성자 함수 new가 없어도 제대로 출력됨
+console.log(result_1); //User { name: 'john' } //생성자 함수 new가 없어도 제대로 출력됨
 
 let result_2 = new User("john");
-console.log(result_2);
+console.log(result_2); //User { name: 'john' }
