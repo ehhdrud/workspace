@@ -1,3 +1,5 @@
+let fruits = ["apple", "Orange", "orange", "melon"];
+
 //오름차순 함수, String method를 통해 모두 대문자로 치환하고 오름차순 정렬
 let ascending_order = function (x, y) {
   x = x.toUpperCase();
@@ -5,7 +7,7 @@ let ascending_order = function (x, y) {
 
   if (x > y) return 1;
   else if (y > x) return -1;
-  else return 0; // <return x>y?1:-1> //❗:이게 오름차순..?
+  else return 0;
 };
 
 //내림차순 함수, String method를 통해 모두 대문자로 치환하고 내림차순 정렬
@@ -15,9 +17,8 @@ let decending_order = function (x, y) {
 
   if (y > x) return 1;
   else if (x > y) return -1;
-  else return 0; // <return y>x?1:-1> //❗:이게 내림차순..?
+  else return 0;
 };
 
-let fruits = ["apple", "Orange", "orange", "melon"];
-console.log(fruits.sort(ascending_order));
-console.log(fruits.sort(decending_order));
+console.log(fruits.sort(ascending_order)); //[ 'apple', 'melon', 'Orange', 'orange' ]
+console.log(fruits.sort(decending_order)); //[ 'Orange', 'orange', 'melon', 'apple' ]

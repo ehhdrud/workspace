@@ -13,9 +13,9 @@ let decending_order = function (x, y) {
 };
 
 let nums = [1, -1, 4, 0, 10, 20, 12];
-console.log(nums.sort(ascending_order));
-console.log(nums.sort(decending_order));
+console.log(nums.sort(ascending_order)); //[-1, 0, 1, 4, 10, 12, 20]
+console.log(nums.sort(decending_order)); //[20, 12, 10, 4, 1, 0, -1]
 
 let fruits = ["apple", "Orange", "orange", "melon"];
-console.log(fruits.sort(ascending_order));
-console.log(fruits.sort(decending_order));
+console.log(fruits.sort(ascending_order)); //[ 'apple', 'melon', 'orange', 'Orange' ]
+console.log(fruits.sort(decending_order)); //[ 'Orange', 'orange', 'melon', 'apple' ]
