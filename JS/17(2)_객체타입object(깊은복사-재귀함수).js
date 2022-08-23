@@ -20,7 +20,7 @@ function copy(user) {
   return result;
 }
 
-admin = copy(user);
+let admin = copy(user);
 
 admin.sizes.weight++;
 --admin.sizes.height;
