@@ -1,14 +1,5 @@
-function solution(arr) {
-  var answer = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr.includes(arr[i]) === true) {
-      let arr2 = arr.slice(i, i + 1);
-    }
-  }
-
-  answer = arr2;
-  return answer;
+function hi(name) {
+  console.log("안녕하세요 " + (name ? name : "알 수 없음") + "님 반갑습니다");
 }
 
-console.log(solution([1, 2, 3, 4]));
+hi("Seo");
