@@ -15,7 +15,7 @@ function debounce(callback, wait) {
   //closure
   //함수가 호출 시 매번 반환
   return function (...args) {
-    const context = this; //화살표 함수를 사용해서 this를 위에서 받아줌
+    const context = this;
 
     clearTimeout(timeout);
     timeout = setTimeout(() => callback.apply(context, args), wait);
