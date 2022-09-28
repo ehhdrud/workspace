@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="movie">좋아하는 영화</label>
+
+      <select id="movie" name="movie" required>
+        <option value="">--Please choose an option--</option>
+        <!-- 해당 옵션을 선택시 빈 문자열이 전송될텐데, 빈 문자열은 없는 값으로 취급이 돼서 <select>의 required옵션에 의해 전송에 실패한다. -->
+        <optgroup label="animation">
+          <option value="toystory">토이스토리</option>
+          <option value="zootopia">주토피아</option>
+          <option value="insideout">인사이드아웃</option>
+        </optgroup>
+
+        <optgroup label="s/f">
+          <option value="jurassicworld">쥬라기월드</option>
+          <option value="matrix">매트릭스</option>
+        </optgroup>
+        <!-- 만약 value값이 없다면 내부에 있는 값을 value값으로 사용해 서버로 전송한다. -->
+      </select>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
