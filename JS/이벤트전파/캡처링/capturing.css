@@ -1,0 +1,17 @@
+#outer {
+  background-color: #ccffcc;
+  padding: 20px;
+  width: 120px;
+  border: 2px solid;
+}
+
+#inner {
+  background-color: #80ff80;
+  padding: 20px;
+  border: 2px solid;
+}
+
+#btn {
+  background-color: #00e600;
+  padding: 10px;
+}

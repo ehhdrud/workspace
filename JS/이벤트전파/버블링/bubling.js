@@ -11,5 +11,5 @@ inner.addEventListener("click", function () {
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", function (event) {
   console.log("button clicked");
-  event.stopPropagation();
+  event.stopPropagation(); // 얘 넣으면 해결 !
 });
