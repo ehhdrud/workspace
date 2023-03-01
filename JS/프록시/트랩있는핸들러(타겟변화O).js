@@ -1,6 +1,6 @@
+// 타겟 객체에서도 처리하도록 한 코드
 const targetObj = {
-  name: "Alice",
-  age: 25,
+  name: "dongkyeong",
 };
 
 const proxyObj = new Proxy(targetObj, {
@@ -10,5 +10,5 @@ const proxyObj = new Proxy(targetObj, {
   },
 });
 
-proxyObj.name = "Bob"; // Setting 'name' to 'Bob'
-console.log(targetObj.name); // Bob
+proxyObj.name = "seo"; // Setting 'name' to 'seo'
+console.log(targetObj.name); // seo
