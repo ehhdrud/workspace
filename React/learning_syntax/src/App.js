@@ -1,11 +1,14 @@
 import "./App.css";
 import { HeaderA, HeaderB, HeaderC } from "./component/Header";
+import Seodongkyeong from "./component/Seodongkyeong";
 // import Header from "./component/(ex)Header_dot";
 // import Header from "./component/(ex)Header_props";
 
 function App() {
   return (
     <div className="App" tabIndex="0">
+      <Seodongkyeong firstName={"Dongkyeong"} lastName={"Seo"} withImg />
+
       <HeaderA />
       <HeaderB />
       <HeaderC />
