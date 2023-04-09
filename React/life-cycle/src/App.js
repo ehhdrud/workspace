@@ -1,8 +1,14 @@
-import Clock from "./components/Clock";
+import ClassClock from "./components/ClassClock";
+import FunctionClock from "./components/FunctionClock";
 import "./App.css";
 
 function App() {
-  return <Clock />;
+  return (
+    <div>
+      <ClassClock />;
+      <FunctionClock />
+    </div>
+  );
 }
 
 export default App;
