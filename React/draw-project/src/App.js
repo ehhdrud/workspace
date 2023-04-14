@@ -31,6 +31,11 @@ export default function App() {
     setCards(data);
   }, []);
 
+  const result = pickedCards.map((idx) => (
+    <BusinessCard info={idx} key={idx.phoneNumber} />
+  ));
+  console.log(result);
+
   return (
     <div>
       {cards.length > 0 && <button onClick={draw}>추첨하기</button>}
@@ -39,8 +44,7 @@ export default function App() {
         <BusinessCard info={pickedCards[pickedCards.length - 1]} />
       )} */}
       {/* 추첨 버튼 눌렀을 때 추첨된 모든 명함 띄우기 */}
-      {pickedCards.length > 0 &&
-        pickedCards.map((idx) => <BusinessCard info={idx} />)}
+      {pickedCards.length > 0 && result}
     </div>
   );
 }
