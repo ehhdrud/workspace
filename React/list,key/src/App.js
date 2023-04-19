@@ -1,3 +1,6 @@
+import ToDoListByIndex from "./components/ToDoListByIndex";
+import ToDoListById from "./components/ToDoListById";
+
 export default function App() {
   const numbers = [1, 2, 3, 4, 5];
   const listItems = numbers.map((idx) => <li>{idx}</li>);
@@ -6,6 +9,8 @@ export default function App() {
   return (
     <div>
       <ul>{listItems}</ul>
+      <ToDoListByIndex />
+      <ToDoListById />
     </div>
   );
 }
