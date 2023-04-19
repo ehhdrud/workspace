@@ -79,6 +79,7 @@ export default function ToDoListById() {
           <th>created at</th>
         </tr>
         {state.list.map((todo, index) => (
+          // key 속성에 index 값말고 다른 고유한 값을 넣으면 해결
           <ToDo key={todo.id} {...todo} />
         ))}
       </table>

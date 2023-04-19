@@ -79,6 +79,7 @@ export default function ToDoListByIndex() {
           <th>created at</th>
         </tr>
         {state.list.map((todo, index) => (
+          // // key 속성에 index 값을 사용하면 예상한대로 동작하지 않음!
           <ToDo key={index} {...todo} />
         ))}
       </table>
