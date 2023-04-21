@@ -3,13 +3,17 @@ import ProductsTable from "./ProductsTable";
 
 export default function StoreTable(props) {
   // console.log(props.products);
-  const { products } = props;
+  const { products, filter } = props;
 
   // 너무 static한 방법... 확장성이 떨어짐 !
   // const sportingGoods = products.filter((p) => p.category === "Sporting Goods");
   // const electronics = products.filter((p) => p.category === "Electronics");
 
-  const result = products.reduce((acc, cur) => {
+  // products에 filter.text가 있으면 그 상품만 렌더링
+  const targetProduct = products.filter((p) => p.name === filter.text);
+  const filteredProducts = targetProduct.length > 0 ? targetProduct : products;
+
+  const result = filteredProducts.reduce((acc, cur) => {
     if (acc.hasOwnProperty(cur.category)) {
       // key(category)를 가지고 있는 케이스로, 배열에 추가만 하면 됨
       return {
@@ -36,7 +40,12 @@ export default function StoreTable(props) {
         <td>Price</td>
       </tr>
       {keys.map((key, idx) => (
-        <ProductsTable category={key} items={result[key]} key={idx} />
+        <ProductsTable
+          key={idx}
+          category={key}
+          items={result[key]}
+          inStockOnly={filter.inStockOnly}
+        />
       ))}
     </table>
   );
