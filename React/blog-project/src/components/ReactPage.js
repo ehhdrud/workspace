@@ -43,7 +43,7 @@ export default function ReactPage() {
           {doc.title}
         </Link>
       ))}
-      {/* <Outlet /> */}
+      <Outlet />
     </div>
   );
 }
