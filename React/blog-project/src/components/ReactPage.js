@@ -2,8 +2,6 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
 export default function ReactPage() {
-  // api call -> react에 해당하는 글의 목록을 응답 받음.
-
   const docs = [
     {
       id: 1,
