@@ -6,6 +6,7 @@ import JavascriptPage from "./components/JavascriptPage";
 import ReactPage from "./components/ReactPage";
 import ReactDocPage from "./components/ReactDocPage";
 import Logo from "./components/Logo";
+import UserStore from "./store/user";
 
 function App() {
   // root url : main page component
@@ -13,7 +14,7 @@ function App() {
   // blog url : blog page component
 
   return (
-    <>
+    <UserStore>
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Logo />}>
@@ -32,7 +33,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </UserStore>
   );
 }
 
