@@ -1,16 +1,21 @@
 import { useSelector, useDispatch } from "react-redux";
+import { fetchUserThunk } from "./modules/account/account";
+/*
 import { fetchUser } from "../src/modules/account/api";
 import {
   fetchUserRequest,
   fetchUserSuccess,
   fetchUserFailure,
 } from "./modules/account/account";
+*/
 
 function App() {
   const account = useSelector((state) => state.account);
   const { loading, name, email } = account;
   const dispatch = useDispatch();
 
+  /*
+  // 미들웨어를 사용하지 않음
   const handleClick = async () => {
     dispatch(fetchUserRequest());
     try {
@@ -20,6 +25,12 @@ function App() {
       dispatch(fetchUserFailure());
     }
   };
+  */
+
+  // redux-thunk 미들웨어를 사용한 비동기 처리
+  function handleClick() {
+    dispatch(fetchUserThunk());
+  }
 
   return (
     <div className="App">

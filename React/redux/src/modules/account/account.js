@@ -1,3 +1,5 @@
+import { fetchUser } from "./api";
+
 // 액션
 const FETCH_USER_REQUEST = "FETCH_USER_REQUEST";
 const FETCH_USER_SUCCESS = "FETCH_USER_SUCCESS";
@@ -17,8 +19,18 @@ export const fetchUserFailure = () => ({
   type: FETCH_USER_FAILURE,
 });
 
-// TODO: thunk 함수 만들기
-export const fetchUserThunk = () => {};
+// thunk 함수를 통해 동기적으로 동작하는 액션 생성 함수로 비동기 처리가 가능해짐!
+export const fetchUserThunk = () => {
+  return async (dispatch) => {
+    dispatch(fetchUserRequest());
+    try {
+      const res = await fetchUser();
+      dispatch(fetchUserSuccess({ name: res.name, email: res.email }));
+    } catch {
+      dispatch(fetchUserFailure());
+    }
+  };
+};
 
 const initialState = {
   loading: false,
