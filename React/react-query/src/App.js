@@ -3,7 +3,13 @@ import Home from "./pages/Home";
 import Edit from "./pages/Edit";
 import { QueryClientProvider, QueryClient } from "react-query";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      cacheTime: 15 * 60 * 1000,
+    },
+  },
+});
 
 function App() {
   return (
