@@ -4,6 +4,7 @@ function Home() {
   return (
     <ul>
       <li>
+        {/* href 속성을 이용해 페이지 전환 */}
         <Link href="/">Home</Link>
       </li>
       <li>

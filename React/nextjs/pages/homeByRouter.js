@@ -5,6 +5,7 @@ function Home() {
   return (
     <ul>
       <li>
+        {/* push 메서드를 이용해 페이지 전환 */}
         <a onClick={() => router.push("/")}>Home</a>
       </li>
       <li>
