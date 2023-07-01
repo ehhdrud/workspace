@@ -4,6 +4,7 @@ import { UserContext } from "../store/user";
 export default function BlogPage() {
   const userInfo = useContext(UserContext);
   console.log(userInfo);
+  // name: "seodongkeyong", job: "FE-developer", changeJob: updatedJob => setJob(updatedJob)
 
   return (
     <div>
