@@ -3,7 +3,6 @@ import { UserContext } from "../store/user";
 
 export default function BlogPage() {
   const { dispatch } = useContext(UserContext);
-  console.log(dispatch);
 
   return (
     <div>
@@ -11,6 +10,7 @@ export default function BlogPage() {
       <button
         onClick={() => dispatch({ type: "changeJob", text: "BE-developer" })}
       >
+        {/* 버튼을 누르면 job을 변경하는 기능 추가 */}
         ChangeJob
       </button>
     </div>
