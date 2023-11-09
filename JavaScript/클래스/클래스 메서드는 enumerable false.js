@@ -3,6 +3,7 @@ class Person {
         this.name = name;
         this.age = age;
     }
+    num = 123;
     getInfo() {
         console.log(`${this.name}은 ${this.age}살입니다`);
     }
