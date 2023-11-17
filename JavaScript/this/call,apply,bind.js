@@ -1,12 +1,12 @@
 const workout = {
-  name: "Squat",
-  todayWorkout: function () {
-    return `오늘의 운동: ${this.name} / `;
-  },
+    name: 'Squat',
+    todayWorkout: function () {
+        return `오늘의 운동: ${this.name} / `;
+    },
 };
 
 function getInfo(kg, sets, reps) {
-  return this.todayWorkout() + `${kg}KG ${sets}SETS ${reps}REPS`;
+    return this.todayWorkout() + `${kg}KG ${sets}SETS ${reps}REPS`;
 }
 
 const strengthTraining = getInfo.call(workout, 140, 3, 5);
